@@ -1,0 +1,13 @@
+/*****************************************************
+ *                                                   *
+ *                 SWIPER . JS                       *
+ *                                                   *
+ *****************************************************/
+
+
+.swiper-container {
+    width: 100%;
+    /* overflow: hidden; */
+    z-index: auto !important;
+    /* Full viewport height */
+}

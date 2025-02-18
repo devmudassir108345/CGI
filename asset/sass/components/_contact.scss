@@ -1,0 +1,51 @@
+.contact {
+  // padding-top: 32.5rem;
+  padding-bottom: 8.7rem;
+
+  &__col {
+    &-1 {
+      width: 80%;
+    }
+  }
+
+  &__list {
+    margin-top: 6rem;
+  }
+
+  &__item {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    border-top: 1px solid $color-gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+      gap: 5rem;
+    }
+  }
+
+  &__left {
+    ul {
+      li {
+        padding: 1rem 0;
+
+        display: grid;
+        grid-template-columns: 40% 60%;
+
+        @media (max-width: 767px) {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+
+        a {
+          color: $color-black;
+          transition: all .3s;
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+}

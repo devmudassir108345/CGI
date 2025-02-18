@@ -1,0 +1,30 @@
+.sitemap{
+   padding-top: 32rem;
+   padding-bottom: 5rem;
+
+    &__list{
+        padding: 2rem 0;
+    }
+
+    &__item{
+
+    }
+
+    &__title{
+        padding: 2rem 0;
+        border-bottom: 1px solid $color-black;
+    }
+
+    &__cols{
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        a{
+            font-size: 1.5rem;
+            color: $color-black;
+            text-transform: capitalize;
+        }
+    }
+   
+}

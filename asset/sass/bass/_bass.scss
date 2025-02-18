@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  // @media (max-width: 1500px) {
+  //   font-size: 55%;
+  // }
+}
+
+body {
+  box-sizing: inherit;
+  overflow: hidden;
+  font-family: $rubik-regular;
+  
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;  
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "Manrope-regular";
+  src: url("/asset/font/Manrope/Manrope-VariableFont_wght.ttf")
+    format("truetype");
+  src: url("/asset/font/Manrope/static/Manrope-Regular.ttf") format("truetype");
+  font-weight: 400; // Regular
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope-bold";
+  src: url("/asset/font/Manrope/Manrope-VariableFont_wght.ttf")
+    format("truetype");
+  src: url("/asset/font/Manrope/static/Manrope-Bold.ttf") format("truetype");
+  // font-weight: 400; // Regular
+  // font-style: normal;
+}
+@font-face {
+  font-family: "Rubik-reuglar";
+  src: url("/asset/font/Rubik-Regular.ttf") format("truetype");
+  font-weight: 400; // Regular
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik-bold";
+  src: url("/asset/font/Rubik-Bold.ttf") format("truetype");
+  font-weight: 400; // Regular
+  font-style: normal;
+}

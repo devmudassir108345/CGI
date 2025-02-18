@@ -1,0 +1,94 @@
+.testimonial {
+  &__slider {
+    position: relative;
+    max-width: 812px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .swiper-slide {
+      text-align: center;
+    }
+  }
+  &__navigation {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 3rem;
+
+    // margin-bottom: 2rem;
+    // gap: 2rem;
+  
+
+    @media (min-width : 1500px) {
+      margin-top: -9rem;
+    }
+    svg {
+      width: 7.8rem;
+
+      
+   
+    }
+  }
+  &__btn {
+    display: flex;
+    // width: 227px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    
+    
+    &:hover{
+        cursor: pointer;
+      }
+    span {
+      height: 8.6rem;
+      width: 8.6rem;
+      display: block;
+      border: 1px solid $color-black;
+      border-radius: 50%;
+
+      @media (max-width : 767px) {
+      
+        height: 6rem;
+        width: 6rem;
+
+        p{
+          display: none;
+        }
+      }
+    }
+    p {
+      font-size: 1.5rem;
+      font-weight: bold;
+      font-family: $manrope-bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+
+      @media (max-width : 767px) {
+      
+       display: none;
+      }
+    }
+    &-next {
+      transform: rotate(-180deg);
+    //   position: absolute;
+    //   right: 0;
+      svg,
+      p {
+        transform: rotate(180deg) translateX(73%);
+      }
+    }
+
+    &-prev {
+        
+      svg {
+        transform: rotate(180deg) translateX(73%);
+      }
+      p{
+        transform:  translateX(-65%);
+      }
+    }
+  }
+}
